@@ -1,0 +1,151 @@
+.button-main {
+  font-size: 20px;
+  font-weight: 800;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(109, 95, 195);
+  background: linear-gradient(270deg, rgba(109, 95, 195, 1) 0%, rgba(74, 173, 215, 1) 100%);
+  color: #fff;
+  display: block;
+  width: 290px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    opacity: 20%;
+  }
+
+  &:hover {
+    background: rgb(109, 95, 195);
+    background: linear-gradient(90deg, rgba(109, 95, 195, 1) 0%, rgba(74, 173, 215, 1) 100%);
+  }
+}
+
+.c-box {
+  background: #6D5FC3;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+
+  .image {
+    text-align: center;
+  }
+
+
+  .text {
+    text-align: left;
+
+    h5 {
+      font-size: 15px;
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    opacity: 20%;
+  }
+}
+
+.list-item-c {
+  display: inline-block;
+  border-bottom: 1px dashed black;
+  margin: 10px 5px 5px 30px;
+  position: relative;
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  &.one {
+    &::after {
+      background: url(../images/01.svg) center center/contain;
+    }
+  }
+
+  &.two {
+    &::after {
+      background: url(../images/2.svg) center center/contain;
+    }
+  }
+
+  &.three {
+    &::after {
+      background: url(../images/3.svg) center center/contain;
+    }
+  }
+
+  &.four {
+    &::after {
+      background: url(../images/4.svg) center center/contain;
+    }
+  }
+
+  &.tick {
+    border: none;
+
+    &::after {
+      top: 5px;
+      background: url(../images/tick.svg) center center/contain;
+    }
+  }
+}
+
+.form-cont {
+  background: rgb(74, 173, 215);
+  background: linear-gradient(180deg, rgba(74, 173, 215, 0.3) 0%, rgba(109, 98, 195, 0.3) 100%);
+  border-radius: 6px;
+  overflow: hidden;
+
+  .form-heading {
+    background: rgb(74, 173, 215);
+    background: linear-gradient(90deg, rgba(74, 173, 215, 0.7) 0%, rgba(109, 98, 195, 0.7) 100%);
+    font-weight: 700;
+    font-size: 20px;
+    padding-block: 10px;
+  }
+
+  .c-input {
+    background: transparent;
+    border: 1px solid #4AADD7;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    width: 290px;
+    padding: 8px;
+    font-size: 15px;
+    color: #000000;
+  }
+}

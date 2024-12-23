@@ -1,0 +1,277 @@
+/* ---  abstracts css start  --- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "FontName";
+  src: url("FileName.eot");
+}
+.heading-big {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Sora", sans-serif;
+}
+
+.heading-Ebl {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  font-family: "Sora", sans-serif;
+}
+
+.sub-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  font-family: "Sora", sans-serif;
+}
+.sub-heading.big {
+  font-size: 24px;
+}
+.sub-heading span {
+  color: #6D5FC3;
+}
+
+p {
+  font-size: 14px;
+}
+
+.para-big {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.data-table td {
+  padding: 2px;
+  font-size: 13px;
+}
+
+/* --- end of abstracts css  --- */
+/* ---  base css start  --- */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.m-container {
+  max-width: 470px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button-main {
+  font-size: 20px;
+  font-weight: 800;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(109, 95, 195);
+  background: linear-gradient(270deg, rgb(109, 95, 195) 0%, rgb(74, 173, 215) 100%);
+  color: #fff;
+  display: block;
+  width: 290px;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.button-main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  opacity: 20%;
+}
+.button-main:hover {
+  background: rgb(109, 95, 195);
+  background: linear-gradient(90deg, rgb(109, 95, 195) 0%, rgb(74, 173, 215) 100%);
+}
+
+.c-box {
+  background: #6D5FC3;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+}
+.c-box .image {
+  text-align: center;
+}
+.c-box .text {
+  text-align: left;
+}
+.c-box .text h5 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.c-box .text p {
+  font-size: 12px;
+}
+.c-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+  opacity: 20%;
+}
+
+.list-item-c {
+  display: inline-block;
+  border-bottom: 1px dashed black;
+  margin: 10px 5px 5px 30px;
+  position: relative;
+  font-size: 14px;
+}
+.list-item-c::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+}
+.list-item-c.one::after {
+  background: url(../images/01.svg) center center/contain;
+}
+.list-item-c.two::after {
+  background: url(../images/2.svg) center center/contain;
+}
+.list-item-c.three::after {
+  background: url(../images/3.svg) center center/contain;
+}
+.list-item-c.four::after {
+  background: url(../images/4.svg) center center/contain;
+}
+.list-item-c.tick {
+  border: none;
+}
+.list-item-c.tick::after {
+  top: 5px;
+  background: url(../images/tick.svg) center center/contain;
+}
+
+.form-cont {
+  background: rgb(74, 173, 215);
+  background: linear-gradient(180deg, rgba(74, 173, 215, 0.3) 0%, rgba(109, 98, 195, 0.3) 100%);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.form-cont .form-heading {
+  background: rgb(74, 173, 215);
+  background: linear-gradient(90deg, rgba(74, 173, 215, 0.7) 0%, rgba(109, 98, 195, 0.7) 100%);
+  font-weight: 700;
+  font-size: 20px;
+  padding-block: 10px;
+}
+.form-cont .c-input {
+  background: transparent;
+  border: 1px solid #4AADD7;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  width: 290px;
+  padding: 8px;
+  font-size: 15px;
+  color: #000000;
+}
+
+/* --- end of base css  --- */
+/* ---  components css start  --- */
+.how-done {
+  position: relative;
+}
+.how-done::after {
+  content: "";
+  position: absolute;
+  left: -400px;
+  top: 200px;
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+  background: rgb(74, 173, 215);
+  background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.establish {
+  position: relative;
+}
+.establish::after {
+  content: "";
+  position: absolute;
+  right: -400px;
+  top: 100px;
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+  background: rgb(74, 173, 215);
+  background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.establish::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -200px;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  background: rgb(74, 173, 215);
+  background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.branding {
+  position: relative;
+}
+.branding::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -150px;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+  background: rgb(74, 173, 215);
+  background: radial-gradient(circle, rgba(49, 188, 248, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+/* --- end of components css  --- */
+/* ---  layouts css start  --- */
+.footer {
+  padding: 10px;
+  background: rgba(103, 56, 159, 0.3);
+}
+
+/* --- end of layouts css  --- *//*# sourceMappingURL=style.css.map */

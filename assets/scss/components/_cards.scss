@@ -1,0 +1,60 @@
+.how-done {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -400px;
+    top: 200px;
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+    background: rgb(74, 173, 215);
+    background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+}
+
+.establish {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -400px;
+    top: 100px;
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+    background: rgb(74, 173, 215);
+    background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    background: rgb(74, 173, 215);
+    background: radial-gradient(circle, rgba(74, 173, 215, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+}
+
+.branding {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -150px;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+    background: rgb(74, 173, 215);
+    background: radial-gradient(circle, rgba(49, 188, 248, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  }
+}
